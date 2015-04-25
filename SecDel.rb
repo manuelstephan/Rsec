@@ -33,7 +33,7 @@ class Rsec
 		    begin
 				[0x00, 0xff].each do |byte|
 				File.open(filePath, 'wb') do |fo|
-				  filesize.times { fo.print(byte.chr) }
+					filesize.times { fo.print(byte.chr) }
 				end
 				end
 			rescue  
